@@ -7,10 +7,10 @@ namespace Data
 {
     public class AirportDatabaseFacade
     {
-        private readonly IMassageService _messageService;
+        private readonly IMessageService _messageService;
         private const string FlightsPath = "flighs.json";
         private const string UsersPath = "users.json";
-        public AirportDatabaseFacade(IMassageService messageService)
+        public AirportDatabaseFacade(IMessageService messageService)
         {
             _messageService = messageService;
         }

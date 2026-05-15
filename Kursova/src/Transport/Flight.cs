@@ -6,6 +6,7 @@ namespace Transport
     {
         public string FlightId { get; set; } = string.Empty;
         public string Destination { get; set; } = string.Empty;
+        public string Origin { get; set; } = string.Empty;
         public DateTime DepartureTime { get; set; }
         public AirPlane Aircraft { get; set; } = new();
         public decimal BasePrice { get; set; }
