@@ -10,12 +10,13 @@ namespace Data
         private readonly IMessageService _messageService;
         private const string FlightsPath = "flighs.json";
         private const string UsersPath = "users.json";
+        private const string AirplanesPath = "airplanes.json";
         public AirportDatabaseFacade(IMessageService messageService)
         {
             _messageService = messageService;
         }
 
-        public void ExportAll(List<Flight> flights, List<User> users)
+        public void ExportAll(List<Flight> flights, List<User> users, List<AirPlane> airplanes)
         {
             string flighsJson = JsonSerializer.Serialize(flights, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(FlightsPath, flighsJson);
@@ -23,11 +24,14 @@ namespace Data
             string usersJson = JsonSerializer.Serialize(users, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(UsersPath, usersJson);
 
-            _messageService.ShowMessage("Дані успішно експортовані.");
+            string airplanesJson = JsonSerializer.Serialize(airplanes, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(AirplanesPath, airplanesJson);
 
+
+            _messageService.ShowMessage("Дані успішно експортовані.");
         }
 
-        public (List<Flight>, List<User>) ImportAll()
+        public (List<Flight>, List<User>, List<AirPlane> airplanes) ImportAll()
         {
             var flights = File.Exists(FlightsPath)
             ? JsonSerializer.Deserialize<List<Flight>>(File.ReadAllText(FlightsPath))
@@ -37,7 +41,13 @@ namespace Data
             ? JsonSerializer.Deserialize<List<User>>(File.ReadAllText(UsersPath))
             : new List<User>();
 
-            return (flights ?? new(), users ?? new());
+            var airplanes = File.Exists("airplanes.json")
+            ? JsonSerializer.Deserialize<List<AirPlane>>(File.ReadAllText("airplanes.json"))
+            : new List<AirPlane>();
+
+            return (flights ?? new(), users ?? new(), airplanes ?? new());
+
+
         }
     }
 

@@ -4,15 +4,17 @@ namespace Service
 {
     public class FlightFactory
     {
-        public Flight CreateFlight(string number, string dest, AirPlane plane, decimal price)
+        public Flight CreateFlight(string number, string origin, string dest, DateTime departure, DateTime arrival, AirPlane plane, decimal price)
         {
             var flight = new Flight
             {
                 FlightId = number,
+                Origin = origin,
                 Destination = dest,
+                DepartureTime = departure,
+                ArrivalTime = arrival,
                 Aircraft = plane,
-                BasePrice = price,
-                DepartureTime = DateTime.Now.AddDays(1)
+                BasePrice = price
             };
 
             for (int r = 0; r < plane.Rows; r++)

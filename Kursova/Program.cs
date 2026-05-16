@@ -6,7 +6,7 @@ using Transport;
 IMessageService messageService = new ConsoleMessageService();
 
 var db = new AirportDatabaseFacade(messageService);
-var (flights, users) = db.ImportAll();
+var (flights, users, airplanes) = db.ImportAll();
 messageService.ShowMessage("Ласкаво просимо до системи обліку аеропорту!");
 
 if (users.Count == 0)
@@ -19,7 +19,7 @@ if (users.Count == 0)
         LastName = "Niema"
     });
 
-    db.ExportAll(flights, users);
+    db.ExportAll(flights, users, airplanes);
 }
 
 var authService = new AuthService();

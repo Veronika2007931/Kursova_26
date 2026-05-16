@@ -10,6 +10,7 @@ namespace Staff
         public string Password { get; set; } = string.Empty;
         public string Name { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
+        public string ThirdName { get; set; } = string.Empty;
 
         public abstract void DisplayMenu();
     }
