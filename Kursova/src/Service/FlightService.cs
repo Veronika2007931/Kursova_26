@@ -127,5 +127,66 @@ namespace Service
             _messageService.ShowMessage($"\nРейс {number} успішно створено та прив'язано до літака {chosenPlane.Model}!");
 
         }
+
+        public List<Flight> SearchFlight(List<Flight> flights)
+        {
+            _messageService.ShowMessage("\n=== Пошук рейсів ===");
+
+            _messageService.ShowMessage("Введіть місто вильоту:");
+            string origin = Console.ReadLine()?.Trim() ?? "";
+
+            _messageService.ShowMessage("Введіть місто прильоту:");
+            string destination = Console.ReadLine()?.Trim() ?? "";
+
+            _messageService.ShowMessage("Введіть дату вильоту (наприклад 2026-05-20) або натисніть Enter, щоб показати на всі дати:");
+            string dateInput = Console.ReadLine()?.Trim() ?? "";
+
+            var query = flights.Where(f =>
+            f.Origin.Equals(origin, StringComparison.OrdinalIgnoreCase) &&
+            f.Destination.Equals(destination, StringComparison.OrdinalIgnoreCase));
+
+            if (!string.IsNullOrEmpty(dateInput) && DateTime.TryParse(dateInput, out DateTime searchDate))
+            {
+                query = query.Where(f => f.DepartureTime.Date == searchDate.Date);
+            }
+
+            List<Flight> foundFlights = query.ToList();
+            if (foundFlights.Count == 0)
+            {
+                _messageService.ShowMessage("\n На жаль, за вашим запитом рейсів не знайдено.");
+                return new List<Flight>();
+            }
+            _messageService.ShowMessage($"\n✅ Знайдено підходящих рейсів: {foundFlights.Count}");
+            _messageService.ShowMessage("----------------------------------------------------------------------");
+            foreach (var flight in foundFlights)
+            {
+                _messageService.ShowMessage(
+                    $"Рейс: {flight.FlightId} | {flight.Origin} -> {flight.Destination} | " +
+                    $"Виліт: {flight.DepartureTime:dd.MM.yyyy HH:mm} | Прибуття: {flight.ArrivalTime:dd.MM.yyyy HH:mm} | " +
+                    $"Ціна від: {flight.BasePrice} грн"
+                );
+            }
+            _messageService.ShowMessage("----------------------------------------------------------------------");
+
+
+            _messageService.ShowMessage("\nВведіть номер рейсу, який ви хочете обрати для купівлі (або '0' для скасування):");
+            string selectedNumber = Console.ReadLine()?.Trim().ToUpper() ?? "";
+
+            if (selectedNumber == "0")
+            {
+                _messageService.ShowMessage("Операцію скасовано.");
+                return new List<Flight>();
+            }
+
+            Flight choosenFlight = foundFlights.Find(f => f.FlightId.ToUpper() == selectedNumber)!;
+
+            if (choosenFlight == null)
+            {
+                _messageService.ShowMessage(" Помилка: Ви ввели номер рейсу, якого немає у списку знайдених.");
+                return new List<Flight>();
+            }
+            _messageService.ShowMessage($"\nВи обрали рейс {choosenFlight.FlightId}. Переходимо до вибору місця...");
+            return new List<Flight> { choosenFlight };
+        }
     }
 }
