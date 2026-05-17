@@ -1,0 +1,15 @@
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/bin/Debug/net9.0/Kursova
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/bin/Debug/net9.0/Kursova.deps.json
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/bin/Debug/net9.0/Kursova.runtimeconfig.json
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/bin/Debug/net9.0/Kursova.dll
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/bin/Debug/net9.0/Kursova.pdb
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/Kursova.GeneratedMSBuildEditorConfig.editorconfig
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/Kursova.AssemblyInfoInputs.cache
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/Kursova.AssemblyInfo.cs
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/Kursova.csproj.CoreCompileInputs.cache
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/Kursova.sourcelink.json
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/Kursova.dll
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/refint/Kursova.dll
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/Kursova.pdb
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/Kursova.genruntimeconfig.cache
+/Users/veronikanema/Documents/GitHub/Kursova_26/Kursova/obj/Debug/net9.0/ref/Kursova.dll

@@ -1,0 +1,73 @@
+[
+  {
+    "$type": "Admin",
+    "Id": "3687f921-46d4-4430-aa54-299670f6b43e",
+    "Login": "admin",
+    "Password": "123",
+    "Name": "Veronika",
+    "LastName": "Niema",
+    "ThirdName": "",
+    "Role": ""
+  },
+  {
+    "$type": "Client",
+    "BookingHistory": [],
+    "Id": "4072729",
+    "Login": "\u0412\u0435\u0440\u043E\u043D\u0456\u043A\u0430 \u041D\u0454\u043C\u0430",
+    "Password": "890",
+    "Name": "\u0412\u0435\u0440\u043E\u043D\u0456\u043A\u0430",
+    "LastName": "\u041D\u0454\u043C\u0430",
+    "ThirdName": "\u0412\u0456\u0442\u0430\u043B\u0456\u0457\u0432\u043D\u0430",
+    "Role": "Client"
+  },
+  {
+    "$type": "Worker",
+    "Id": "D5812DB",
+    "Login": "\u0410\u043D\u043D\u0430 \u042F\u0432\u043E\u0440\u0441\u044C\u043A\u0430",
+    "Password": "1234",
+    "Name": "\u0410\u043D\u043D\u0430",
+    "LastName": "\u042F\u0432\u043E\u0440\u0441\u044C\u043A\u0430",
+    "ThirdName": "\u0421\u0435\u0440\u0433\u0456\u0457\u0432\u043D\u0430",
+    "Role": "\u041F\u0456\u043B\u043E\u0442"
+  },
+  {
+    "$type": "Worker",
+    "Id": "9E7C8D9",
+    "Login": "\u041A\u0430\u0440\u0438\u043D\u0430 \u0414\u043E\u0440\u043E\u0433\u0456\u0439",
+    "Password": "1279",
+    "Name": "\u041A\u0430\u0440\u0438\u043D\u0430",
+    "LastName": "\u0414\u043E\u0440\u043E\u0433\u0456\u0439",
+    "ThirdName": "\u0412\u043E\u043B\u043E\u0434\u0438\u043C\u0438\u0440\u0456\u0432\u043D\u0430",
+    "Role": "\u0421\u0442\u044E\u0430\u0440\u0434\u0435\u0441\u0430"
+  },
+  {
+    "$type": "Worker",
+    "Id": "F0BE29D",
+    "Login": "\u041A\u0440\u0430\u0432\u0447\u0435\u043D\u043A\u043E \u0412\u043B\u0430\u0434\u0438\u0441\u043B\u0430\u0432\u0430",
+    "Password": "4561",
+    "Name": "\u0412\u043B\u0430\u0434\u0438\u0441\u043B\u0430\u0432\u0430",
+    "LastName": "\u041A\u0440\u0430\u0432\u0447\u0435\u043D\u043A\u043E",
+    "ThirdName": "\u041E\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u0456\u0432\u043D\u0430",
+    "Role": "\u041F\u0456\u043B\u043E\u0442"
+  },
+  {
+    "$type": "Worker",
+    "Id": "F434C44",
+    "Login": "\u042E\u0441\u0438\u043D \u042F\u043A\u0456\u0432",
+    "Password": "3467",
+    "Name": "\u042F\u043A\u0456\u0432",
+    "LastName": "\u042E\u0441\u0438\u043D",
+    "ThirdName": "\u041E\u043B\u0435\u043A\u0441\u0456\u0439\u043E\u0432\u0438\u0447",
+    "Role": "\u041F\u0456\u043B\u043E\u0442"
+  },
+  {
+    "$type": "Worker",
+    "Id": "EDDC1B8",
+    "Login": "\u0422\u0435\u0442\u044F\u043D\u0430 \u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u043D\u0430",
+    "Password": "7863",
+    "Name": "\u0422\u0435\u0442\u044F\u043D\u0430",
+    "LastName": "\u0417\u0430\u0431\u043E\u043B\u043E\u0442\u043D\u044F",
+    "ThirdName": "\u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u043D\u0430",
+    "Role": "\u0421\u0442\u044E\u0430\u0440\u0434\u0435\u0441\u0430"
+  }
+]

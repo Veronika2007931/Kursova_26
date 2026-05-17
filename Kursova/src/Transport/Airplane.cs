@@ -3,7 +3,7 @@ namespace Transport
     public class AirPlane
     {
         public string Model { get; set; } = string.Empty;
-        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string Id { get; set; } = string.Empty;
         public int Rows { get; set; }
         public int Columns { get; set; }
 

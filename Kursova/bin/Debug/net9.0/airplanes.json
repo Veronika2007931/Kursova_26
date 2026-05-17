@@ -1,0 +1,44 @@
+[
+  {
+    "Model": "Boeing 737-800",
+    "Id": "C933A",
+    "Rows": 30,
+    "Columns": 6,
+    "TotalSeats": 180
+  },
+  {
+    "Model": "Airbus A320",
+    "Id": "234F8",
+    "Rows": 29,
+    "Columns": 6,
+    "TotalSeats": 174
+  },
+  {
+    "Model": "Boeing 777-300ER",
+    "Id": "27F94",
+    "Rows": 40,
+    "Columns": 10,
+    "TotalSeats": 400
+  },
+  {
+    "Model": "Embraer E190",
+    "Id": "B070A",
+    "Rows": 25,
+    "Columns": 4,
+    "TotalSeats": 100
+  },
+  {
+    "Model": "ATR 72",
+    "Id": "722EB",
+    "Rows": 18,
+    "Columns": 4,
+    "TotalSeats": 72
+  },
+  {
+    "Model": "\u043F\u0456\u0443\u0435\u0446\u0440\u0435",
+    "Id": "A48AF",
+    "Rows": 30,
+    "Columns": 6,
+    "TotalSeats": 180
+  }
+]
