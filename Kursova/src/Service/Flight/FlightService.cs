@@ -94,7 +94,7 @@ namespace Service
             _messageService.ShowMessage("Введіть місто призначення (Destination, наприклад, Paris):");
             string destination = Console.ReadLine() ?? "Unknown";
 
-            // 1. Введення часу вильоту
+
             _messageService.ShowMessage("Введіть дату та час вильоту (формат РРРР-ММ-ДД ГГ:ХХ, наприклад 2026-05-20 15:30):");
             if (!DateTime.TryParse(Console.ReadLine(), out DateTime departureTime))
             {
@@ -102,7 +102,7 @@ namespace Service
                 _messageService.ShowMessage($"Некоректний формат. Автоматично встановлено: {departureTime}");
             }
 
-            // 2. Введення часу прибуття
+
             _messageService.ShowMessage("Введіть дату та час прибуття в місце призначення (формат РРРР-ММ-ДД ГГ:ХХ):");
             if (!DateTime.TryParse(Console.ReadLine(), out DateTime arrivalTime))
             {

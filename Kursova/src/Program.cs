@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Data;
+﻿using Data;
 using Service;
 using Staff;
-using Transport;
 
 IMessageService messageService = new ConsoleMessageService();
 var db = new AirportDatabaseFacade(messageService);
@@ -54,7 +51,6 @@ while (currentUser == null)
 
     if (startChoice == "1")
     {
-
         messageService.ShowMessage("\nВведіть логін:");
         string login = Console.ReadLine() ?? "";
 
@@ -70,7 +66,6 @@ while (currentUser == null)
     }
     else if (startChoice == "2")
     {
-
         messageService.ShowMessage("\n--- Реєстрація нового клієнта ---");
 
         string newLogin = "";
@@ -104,7 +99,6 @@ while (currentUser == null)
         messageService.ShowMessage("Введіть по-батькові:");
         string newThirdName = Console.ReadLine()?.Trim() ?? "";
 
-
         Client newClient = new Client
         {
             Login = newLogin,
@@ -116,8 +110,6 @@ while (currentUser == null)
         };
 
         users.Add(newClient);
-
-
         db.ExportAll(flights, users, airplanes);
 
         messageService.ShowMessage($"\nКлієнта [{newName} {newLastName}] успішно зареєстровано!");
@@ -129,12 +121,13 @@ while (currentUser == null)
     }
 }
 
-
 messageService.ShowMessage($"\nАвторизація успішна! Вітаємо, {currentUser.Name}!");
+
 
 bool isRunning = true;
 while (isRunning)
 {
-
     isRunning = currentUser.DisplayMenu(flights, users, airplanes, db, flightService, bookingService, employeeService);
 }
+
+

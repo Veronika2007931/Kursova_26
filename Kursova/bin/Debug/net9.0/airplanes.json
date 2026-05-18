@@ -40,5 +40,12 @@
     "Rows": 30,
     "Columns": 6,
     "TotalSeats": 180
+  },
+  {
+    "Model": "Boeing567",
+    "Id": "\u0415\u041F897",
+    "Rows": 20,
+    "Columns": 6,
+    "TotalSeats": 120
   }
 ]

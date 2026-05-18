@@ -63,7 +63,7 @@ namespace Service
                 for (int c = 0; c < plane.Columns; c++)
                 {
                     string seat = plane.GetSeatName(r, c);
-                    if (flight.OccupiedSeats.ContainsKey(seat) || flight.OccupiedSeats[seat] != "Empty")
+                    if (flight.OccupiedSeats.ContainsKey(seat) && flight.OccupiedSeats[seat] != "Empty")
                     {
                         rowText += "[X]";
                     }
@@ -185,8 +185,6 @@ namespace Service
                 _messageService.ShowMessage("Операцію скасовано.");
                 return;
             }
-
-            // Отримуємо обраний квиток
             var selected = clientTickets[choice - 1];
 
             _messageService.ShowMessage($"Ви впевнені, що хочете повернути квиток на рейс {selected.flight.FlightId}, місце {selected.seatNumber}? (т/н):");

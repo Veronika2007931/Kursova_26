@@ -2,7 +2,7 @@ using System;
 
 namespace Service
 {
-    // Абстрактний клас, що задає шаблон (каркас) друку
+
     public abstract class DocumentPrinter
     {
 

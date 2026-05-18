@@ -11,7 +11,9 @@
   },
   {
     "$type": "Client",
-    "BookingHistory": [],
+    "BookingHistory": [
+      "A4E2275E"
+    ],
     "Id": "4072729",
     "Login": "\u0412\u0435\u0440\u043E\u043D\u0456\u043A\u0430 \u041D\u0454\u043C\u0430",
     "Password": "890",
@@ -69,5 +71,28 @@
     "LastName": "\u0417\u0430\u0431\u043E\u043B\u043E\u0442\u043D\u044F",
     "ThirdName": "\u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u043D\u0430",
     "Role": "\u0421\u0442\u044E\u0430\u0440\u0434\u0435\u0441\u0430"
+  },
+  {
+    "$type": "Client",
+    "BookingHistory": [
+      "A9170310"
+    ],
+    "Id": "3471412",
+    "Login": "\u0421\u043E\u0444\u0456\u044F \u0421\u043C\u0430\u043B\u044C",
+    "Password": "6785",
+    "Name": "\u0421\u043E\u0444\u0456\u044F",
+    "LastName": "\u0421\u043C\u0430\u043B\u044C",
+    "ThirdName": "\u041E\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u0456\u0432\u043D\u0430",
+    "Role": "Client"
+  },
+  {
+    "$type": "Worker",
+    "Id": "E9B0DEA",
+    "Login": "\u0410\u043D\u043D\u0430 \u0414\u043E\u0440\u043E\u0433\u0456\u0439",
+    "Password": "5678",
+    "Name": "\u0410\u043D\u043D\u0430",
+    "LastName": "\u0414\u043E\u0440\u043E\u0433\u0456\u0439",
+    "ThirdName": "\u0412\u043E\u043B\u043E\u0434\u0438\u043C\u0438\u0440\u0456\u0432\u043D\u0430",
+    "Role": "\u0421\u0442\u044E\u0430\u0440\u0434\u0435\u0441\u0441\u0430"
   }
 ]
